@@ -1,21 +1,21 @@
-Markov Chains
-  ###"What?":
+  #Markov Chains
+  ##"What?":
   Shhh. It's okay. Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
-  ###"How?":
+  ##"How?":
    A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the first word, then outputs text based on the probability that one word will follow another.
 
-   ###"Dictionaries":
+   ##"Dictionaries":
    We create dictionaries by indexing words into a hash and giving them values.
 
-   ###"Frequency Hashes":
+   ##"Frequency Hashes":
 
 
    I'm no good at writing sample / filler text, so go write something yourself.
 
    Look, a list!
 
-    * foo
+    * 
     * bar
     * baz
 
@@ -24,12 +24,7 @@ Markov Chains
    Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
    the inspiration to this, and some handy implementation hints, came.
 
-   ### Stuff used to make this:
-
-    * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
-    * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
-    * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
-    * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
+ 
 
 
 
@@ -72,3 +67,9 @@ Markov Chains
       word = mc.get(word)
     end
     puts sentence << "\n\n"
+
+
+    ## Sources:
+
+     * http://rubyquiz.com/quiz74.html
+     
