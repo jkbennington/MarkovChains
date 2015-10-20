@@ -1,11 +1,15 @@
   #Markov Chains
+
   ##"What?":
+
   Shhh. It's okay. Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
   ##"How?":
+  
    A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the first word, then outputs text based on the probability that one word will follow another.
 
    ##"Dictionaries":
+
    We create dictionaries by indexing words into a hash and giving them values.
 
    ##"Frequency Hashes":
