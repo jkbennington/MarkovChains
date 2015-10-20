@@ -23,9 +23,13 @@
 
 
    |     Keys      |    Values     |   Frequency          | Chance of coming after  Key     | 
+   
    | ------------- | ------------- | -------------------  | ------------------------------- |
+   
    |      Th       | [e, e, e]     | rand(0..value.length)|  e = 3/3 = 100%                 | 
+   
    |      he       | [s, m ]       | rand(0..value.length)|  s = 1/2 = 50% , m = 1/2 = 50%  |
+   
    |      es       | [e]           | rand(0..value.length)|  e = 1/1 = 100%                 |
   
   The keys take two letters because the model is to the order of 2, then stores the following letter as a key and shifts over 1 character to set a new key and repeat the process. Once all the keys and values have been stored we check the frequency of these letters by checking how often they appear as a stored value. 
