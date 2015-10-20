@@ -1,24 +1,14 @@
 Markov Chains
- "What?"
+  ###"What?":
   Shhh. It's okay. Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
-  "How?"
+  ###"How?":
    A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the first word, then outputs text based on the probability that one word will follow another.
 
-   "Dictionaries"
+   ###"Dictionaries":
    We create dictionaries by indexing words into a hash and giving them values.
 
-   "Frequency Hashes"
-
-
-   # (GitHub-Flavored) Markdown Editor
-
-   Basic useful feature list:
-
-    * Ctrl+S / Cmd+S to save the file
-    * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
-    * Drag and drop a file into here to load it
-    * File contents are saved in the URL so you can share files
+   ###"Frequency Hashes":
 
 
    I'm no good at writing sample / filler text, so go write something yourself.
@@ -29,15 +19,6 @@ Markov Chains
     * bar
     * baz
 
-   And here's some code! :+1:
-
-   ```javascript
-   $(function(){
-     $('div').html('I am a div.');
-   });
-   ```
-
-   This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
 
 
    Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
