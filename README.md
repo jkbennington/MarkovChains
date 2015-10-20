@@ -23,13 +23,9 @@
 
 ```
    |     Keys      |    Values     |   Frequency          | Chance of coming after  Key     | 
-   
-   | ------------- | ------------- | -------------------  | ------------------------------- |
-   
-   |      Th       | [e, e, e]     | rand(0..value.length)|  e = 3/3 = 100%                 | 
-   
-   |      he       | [s, m ]       | rand(0..value.length)|  s = 1/2 = 50% , m = 1/2 = 50%  |
-   
+   | ------------- | ------------- | -------------------  | ------------------------------- | 
+   |      Th       | [e, e, e]     | rand(0..value.length)|  e = 3/3 = 100%                 |   
+   |      he       | [s, m ]       | rand(0..value.length)|  s = 1/2 = 50% , m = 1/2 = 50%  |   
    |      es       | [e]           | rand(0..value.length)|  e = 1/1 = 100%                 |
 ```
 
