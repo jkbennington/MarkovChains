@@ -32,7 +32,7 @@
    
    |      es       | [e]           | rand(0..value.length)|  e = 1/1 = 100%                 |
 ```
-  
+
   The keys take two letters because the model is to the order of 2, then stores the following letter as a key and shifts over 1 character to set a new key and repeat the process. Once all the keys and values have been stored we check the frequency of these letters by checking how often they appear as a stored value. 
 
 
@@ -82,7 +82,7 @@
     puts sentence << "\n\n"
 ```
 
-  ## Sources:
+## Sources:
 
      * http://rubyquiz.com/quiz74.html
      * http://www.cs.princeton.edu/courses/archive/spr05/cos126/assignments/markov.html
