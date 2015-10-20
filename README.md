@@ -1,6 +1,6 @@
   # Markov Chains
 
-  ## "What?":
+  ## What?:
 
   Shhh. It's okay. Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
