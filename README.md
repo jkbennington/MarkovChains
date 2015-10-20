@@ -22,18 +22,13 @@
    Models set the amount of characters or words that we want to use as keys and we can determine how to do so by something called *order of*. Here's an example of three words with an order of 2 with the words "the these them" provided as input.
 ### Example:
 
-```
    |     Keys      |    Values     |   
    | ------------- | ------------- | 
    |      Th       | [e, e, e]     |
    |      he       | [s, m ]       |
    |      es       | [e]           |          
-```
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+
 
 
 ### Basic Test:
