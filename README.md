@@ -16,23 +16,15 @@
 
 ## "Frequency Hashes":
 
-
-   I'm no good at writing sample / filler text, so go write something yourself.
-
-   Look, a list!
-
     * 
     * bar
     * baz
 
 
 
-   Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
-   the inspiration to this, and some handy implementation hints, came.
-
  
-
-
+##Ruby Example
+'''
 
     class MarkovChain
       def initialize(text)
@@ -73,7 +65,7 @@
       word = mc.get(word)
     end
     puts sentence << "\n\n"
-
+'''
 
   ## Sources:
 
