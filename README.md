@@ -16,10 +16,19 @@
 
 ## Frequency Hashes:
 
-    * 
-    * bar
-    * baz
+   Adds a count to how frequent something occurs. In this case we'll explore we're checking how frequently one word comes after another. 
 
+## Models/Order of:
+   Models set the amount of characters or words that we want to use as keys and we can determine how to do so by something called *order of*. Here's an example of three words with an order of 2 with the words "the these them" provided as input.
+
+
+   |     Keys      |    Values     |   Frequency          | Chance of coming after  Key     | 
+   | ------------- | ------------- | -------------------  | ------------------------------- |
+   |      Th       | [e, e, e]     | rand(0..value.length)|  e = 3/3 = 100%                 | 
+   |      he       | [s, m ]       | rand(0..value.length)|  s = 1/2 = 50% , m = 1/2 = 50%  |
+   |      es       | [e]           | rand(0..value.length)|  e = 1/1 = 100%                 |
+  
+  The keys take two letters because the model is to the order of 2, then stores the following letter as a key and shifts over 1 character to set a new key and repeat the process. Once all the keys and values have been stored we check the frequency of these letters by checking how often they appear as a stored value. 
 
 
  
@@ -56,7 +65,7 @@
     end
 
     mc = MarkovChain.new(
-      File.read("Agatha Christie - The Mysterious Affair at Styles.txt")
+      File.read("DorianGray.txt")
     )
 
     sentence = ""
@@ -71,4 +80,4 @@
   ## Sources:
 
      * http://rubyquiz.com/quiz74.html
-     
+     * http://www.cs.princeton.edu/courses/archive/spr05/cos126/assignments/markov.html
