@@ -97,9 +97,11 @@
     end
     puts sentence << "\n\n"
 ```
-## What does it all mean?
-   Let's do a general overview. In def initialize we create a hash, split the text on whitespace, index each word and invoke the add method. The add method then checks if the word already exists and creates a frequency hash adding the following word as a value. Finally in the def get we find our current word index and look for all the words that are stored as values taking the frequencies of each and checking them against a random number that's equal to our total stored words(*remember our rand(1..value.length) example*).
+## In english:
+   Let's do a general overview. In def initialize we create a hash, split the text on whitespace, index each word and invoke the add method. The add method then checks if the word already exists and creates a frequency hash adding the following word as a value. Finally in the def get we find our current word index and look for all the words that are stored as values taking the frequencies of each and checking them against a random number that's equal to our total stored words(**remember our rand(1..value.length) example**).
 
+## Final notes:
+   It's important to remember that this is a very basic example of the power behind MarkovChains. Try to think of an example where a MarkovChain would be useful, it may help you down the line.
 
 ## Sources:
 
