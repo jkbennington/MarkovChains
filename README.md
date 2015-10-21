@@ -4,7 +4,8 @@
 
   Shhh. It's okay. Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
-  **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** 
+## Mental Note:
+  **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
 
 ## How?:
 
@@ -19,28 +20,36 @@
    Adds a count to how frequent something occurs. In this case we'll explore we're checking how frequently one word comes after another. 
 
 ## Models/Order of:
-   Models set the amount of characters or words that we want to use as keys and we can determine how to do so by something called *order of*. Here's an example of three words with an order of 2 with the words "the these them" provided as input.
+   Models set the amount of characters or words that we want to use as keys and we can determine how to do so by something called *order of*. Here's an example of three words with an order of 2 with the words "the these them" provided as three separate inputs to simplify this example.
+
 ### Example:
 
 |     Keys      |    Values     |   
 | ------------- | ------------- | 
 |      Th       | [e, e, e]     |
 |      he       | [s, m ]       |
-|      es       | [e]           |          
+|      em       | []            |
+|      es       | [e]           | 
+|      se       | []            |
+
+  The keys take two letters because the model is to the order of 2, then stores the following letter as a value and shifts over 1 character to set a new key and repeat the process.
 
 
-
-
-### Basic Test:
+### Results:
 
 |     Keys      |    Values     |   Frequency          | Chance of value coming after Key | 
 | ------------- | ------------- | -------------------  | -------------------------------- | 
 |      Th       | [e, e, e]     | rand(0..value.length)|  e = 3/3 = 100%                  |   
 |      he       | [s, m ]       | rand(0..value.length)|  s = 1/2 = 50% , m = 1/2 = 50%   |   
 |      es       | [e]           | rand(0..value.length)|  e = 1/1 = 100%                  |
+|      em       | []            | rand(0..value.length)|                                  | 
+|      se       | []            | rand(0..value.length)|                                  |
 
 
-  The keys take two letters because the model is to the order of 2, then stores the following letter as a key and shifts over 1 character to set a new key and repeat the process. Once all the keys and values have been stored we check the frequency of these letters by checking how often they appear as a stored value. 
+   Once all the keys and values have been stored we check the frequency of these letters by checking how often they appear as a stored value. 
+
+#### So now what?
+   Remember that **mental note** we took? If "Th" is the *current state* the chance that the next state is "he" is what percent? Since we know "e" comes after the key "Th" 100% of the time we can infer that the *next state* will be "he".
 
 
  

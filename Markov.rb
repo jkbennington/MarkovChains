@@ -27,12 +27,12 @@ class MarkovChain
     end
 
     mc = MarkovChain.new(
-      File.read("/DorianGray.txt")
+      File.read("DorianGray.txt")
     )
 
     sentence = ""
-    word = "Murder"
-    until sentence.count(".") == 4
+    word = "Fishpingle"
+    until sentence.count(".") == 10
       sentence << word << " "
       word = mc.get(word)
     end
