@@ -1,15 +1,16 @@
 # Markov Chains
 
+######Andrei Markov
+![Image of NotMarkov](http://ourhistory.canadiens.com/media/c237ea057f818172/small/Markov_Andrei_1.jpg)
+   Wait that's not right.
+
 ######Andrey Markov
 ![Image of Markov](http://www.satoconor.com/Portals/2/N89Markov.jpg)
-
-######Not to be confused with Andrei Markov
-![Image of NotMarkov](http://ourhistory.canadiens.com/media/c237ea057f818172/small/Markov_Andrei_1.jpg)
 
 
 
 ## What?
-   Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
+   Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. Conversely they can be used for something as powerful as speech recognition. 
 
 ## Mental Note
   **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
@@ -18,7 +19,6 @@
    A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the first word, then outputs text based on the probability that one word will follow another.
 
 ## Dictionaries
-
    We create dictionaries by indexing words into a hash and giving them values.
 
 ## Frequency Hashes
