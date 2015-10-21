@@ -2,7 +2,7 @@
 
 ## What?:
 
-  Shhh. It's okay. Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
+   Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
 ## Mental Note:
   **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
@@ -54,7 +54,7 @@
 
  
 ##Ruby Example
-
+   This example generates new text based on the text that is input on initialize. Let's take a look:
 ```ruby
 
     class MarkovChain
@@ -90,13 +90,16 @@
     )
 
     sentence = ""
-    word = "Murder"
+    word = "Picture"
     until sentence.count(".") == 4
       sentence << word << " "
       word = mc.get(word)
     end
     puts sentence << "\n\n"
 ```
+## What does it all mean?
+   Let's do a general overview. In def initialize we create a hash, split the text on whitespace, index each word and invoke the add method. The add method then checks if the word already exists and creates a frequency hash adding the following word as a value. Finally in the def get we find our current word index and look for all the words that are stored as values taking the frequencies of each and checking them against a random number that's equal to our total stored words(*remember our rand(1..value.length) example*).
+
 
 ## Sources:
 
