@@ -12,7 +12,7 @@
   **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
 
 ## How?
-   A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the first word, then outputs text based on the probability that one word will follow another.
+   A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the word preceeding it, then outputs text based on the probability that one word will follow another.
 
 ## Dictionaries
    We create dictionaries by indexing words into a hash and giving them values.
@@ -34,7 +34,7 @@
 |      em       | []            |
 |      se       | []            |
 
-  The keys take two letters because the model is to the order of 2, then stores the following letter as a value and shifts over 1 character to set a new key and repeat the process.
+  The keys take *two* letters because the model is to the order of *2*, then stores the following letter as a value and shifts over 1 character to set a new key and repeat the process.
 
 
 ### Results:
