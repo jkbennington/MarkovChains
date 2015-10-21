@@ -1,35 +1,41 @@
 # Markov Chains
 
-## What?:
+######Andrey Markov
+![Image of Markov](http://www.satoconor.com/Portals/2/N89Markov.jpg)
 
+######Not to be confused with Andrei Markov
+![Image of NotMarkov](http://ourhistory.canadiens.com/media/c237ea057f818172/small/Markov_Andrei_1.jpg)
+
+
+
+## What?
    Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. They can also be used for something as powerful as speech recognition. 
 
-## Mental Note:
+## Mental Note
   **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
 
-## How?:
-
+## How?
    A simple markov chain (which we'll explore briefly today) would be one that takes in text, learns each word and the word adjacent to the first word, then outputs text based on the probability that one word will follow another.
 
-## Dictionaries:
+## Dictionaries
 
    We create dictionaries by indexing words into a hash and giving them values.
 
-## Frequency Hashes:
+## Frequency Hashes
+   Adds a count to how frequent something occurs. In this ruby example we'll see later we're checking how frequently one word comes after another. 
 
-   Adds a count to how frequent something occurs. In this case we're checking how frequently one word comes after another. 
-
-## Models/Order of:
-   Models set the amount of characters or words that we want to use as keys and we can determine how to do so by something called *order of*. Here's an example of three words with an order of 2 with the words "the these them" provided as three separate inputs to simplify this example.
+## Models/Order of
+   Models set the amount of characters or words that we want to use as keys and we can determine how to do so by something called *order of*. 
 
 ### Example:
-
+   Here's an example of three words with an order of 2 with the words "the these them" provided as three separate inputs to simplify the following example.
+   
 |     Keys      |    Values     |   
 | ------------- | ------------- | 
 |      Th       | [e, e, e]     |
 |      he       | [s, m ]       |
-|      em       | []            |
 |      es       | [e]           | 
+|      em       | []            |
 |      se       | []            |
 
   The keys take two letters because the model is to the order of 2, then stores the following letter as a value and shifts over 1 character to set a new key and repeat the process.
@@ -49,7 +55,7 @@
    Once all the keys and values have been stored we check the frequency of these letters by checking how often they appear as a stored value. 
 
 #### So now what?
-   Remember that **mental note** we took? If "Th" is the *current state* the chance that the next state is "he" is what percent? Since we know "e" comes after the key "Th" 100% of the time we can infer that the *next state* will be "he".
+   Remember that **mental note** we took? If "Th" is the *current state* the chance that the *next state* is "he" is what percent? Since we know "e" comes after the key "Th" 100% of the time we can infer that the *next state* will be "he".
 
 
  
@@ -101,7 +107,13 @@
    Let's do a general overview. In 'def initialize' we create a hash, split the text on whitespace, index each word and invoke the add method. The add method then checks if the word already exists and creates a frequency hash adding the following word as a value. Finally in the 'def get' we find our current word index and look for all the words that are stored as values taking the frequencies of each and checking them against a random number that's equal to our total stored words(**remember our rand(1..value.length) example**).
 
 ## Final notes:
-   It's important to remember that this is a very basic example of the power behind MarkovChains. Try to think of an example where a MarkovChain would be useful, it may help you down the line.
+   It's important to remember that this is a very basic example of the power behind MarkovChains. Try to think of an example where a MarkovChain would be useful, it might inspire you down the line.
+
+## Further Reading:
+     * http://rubyquiz.com/quiz74.html    
+     * http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf
+     * http://www.cs.princeton.edu/courses/archive/spr05/cos126/assignments/markov.html
+     * https://www.ll.mit.edu/publications/journal/pdf/vol03_no1/3.1.3.speechrecognition.pdf
 
 ## Sources:
 
