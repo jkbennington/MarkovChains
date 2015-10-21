@@ -1,16 +1,12 @@
 # Markov Chains
 
-######Andrei Markov
-![Image of NotMarkov](http://ourhistory.canadiens.com/media/c237ea057f818172/small/Markov_Andrei_1.jpg)
-   Wait that's not right.
-
-######Andrey Markov
+#####Andrey Markov
 ![Image of Markov](http://www.satoconor.com/Portals/2/N89Markov.jpg)
-
+######Russian Mathematician 
 
 
 ## What?
-   Markov Chains are very powerful algorithms that can be used for simple things such as creating realistic data to seed your web app. Conversely they can be used for something as powerful as speech recognition. 
+   Markov Chains are very powerful algorithms that are used to calculate probabilities. They can be used for simple things such as creating realistic data to seed your web app. Conversely they can be used for something as powerful as speech recognition. 
 
 ## Mental Note
   **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
