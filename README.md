@@ -6,7 +6,7 @@
 
 
 ## What?
-   Markov Chains are very powerful algorithms that are used to calculate probabilities. They can be used for simple things such as creating realistic data to seed your web app as well as something as powerful as speech recognition. 
+   Markov Chains are very powerful algorithms that are used to calculate probabilities. They can be used for something as simple as seeding realistic data to something as powerful as speech recognition. 
 
 ## Mental Note
   **The important thing to remember is that Markov Chains use the current state of something to predict the next state.** We'll explore this more later.
